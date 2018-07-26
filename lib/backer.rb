@@ -10,6 +10,7 @@ class Backer #has many recipricol relationship! w. has many you know you need to
     @backed_projects << project #save the local project var into the instance backed_projects array. so Backer class knows abot the project!
     #need to them set up opposite relationship so that PROJECT knows about the BACKER
     #Project is an object of the Project Class. Which means it has access to ANY method within its class. So it has access to its instance method
-    #add_backer(backer) so we can use that method on this argument (project) bc (project) is an instance of the Project Class
+    #add_backer(backer) so we can use that method on this argument (project) bc (project) is an instance of the Project Class:
+    project.add_backer(backer)
   end
 end
