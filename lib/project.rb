@@ -1,5 +1,5 @@
 class Project   #Projects can HAVE MANY BACKERS. Backers can HAVE MANY Projects. So, it is a "HAS MANY" to "HAS MANY" relationship.
-  attr_accessor :title, :backers, :add_backer  #need to be able to set & get the title
+  attr_accessor :title, :backers #:add_backer  #need to be able to set & get the title
   #attr_writer :add_backer
 
   def initialize(title)
