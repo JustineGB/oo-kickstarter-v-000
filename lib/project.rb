@@ -8,6 +8,7 @@ class Project
   end
 
   def add_backer(backer)
+    @backer = backer
     @backers << backer #stores this specific backer into the backer's array (owned by the Project Class)
     #Need to call the Backer Class in order to call their method @backed_projects and then save backer into it....
     backer = Backer.back_project(backer)
