@@ -7,10 +7,7 @@ class Project
     @backers = []
   end
 
-  def add_backer(backer)
+  def add_backer(backer) #call self w/in this method? self to instance. then call Backer Class.back_projects method?
     @backers << backer #stores this specific backer into the backer's array (owned by the Project Class)
-    #Need to call the Backer Class in order to call their method @backed_projects and then save backer into it....
-    #i think I need to call SELF in here bc SELF refers to the INSTANCE and not the project class
   end
 end
-  #(Backer as argument) and store in array! Need to refer to self and call Backer class in order to do so?
