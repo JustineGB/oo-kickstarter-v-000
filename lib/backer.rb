@@ -1,8 +1,5 @@
 class Backer
-
   attr_accessor :backed_projects, :name
-  #attr_reader :project 
-
   def initialize(name)
     @name = name
     @backed_projects = []
