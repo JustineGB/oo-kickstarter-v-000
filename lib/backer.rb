@@ -12,7 +12,7 @@ class Backer #has many recipricol relationship! w. has many you know you need to
     #Project is an object of the Project Class. Which means it has access to ANY method within its class. So it has access to its instance method
     #add_backer(backer) so we can use that method on this argument (project) bc (project) is an instance of the Project Class:
     project.add_backer(self) #need to change this argument to self bc backer (argument from other class is not defined here in this class/method bc its just a local var)
-    #when you change to self it refers to the 
+    #when you change to self it refers to the instance!
   end
 end
 
