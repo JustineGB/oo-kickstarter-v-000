@@ -1,5 +1,5 @@
 class Project
-  attr_accessor :title #:backer #needs to be able to read/write title. Needs to read the backer...does it also need to write it? IDk...
+  attr_accessor :title, :backers 
   @backers = []
 
   def initialize(title)
