@@ -8,6 +8,5 @@ class Backer
 
   def back_project(project)
     @backed_projects << project
-    @backed_projects << Project.add_backer(project) #this creates a new instance...
   end
 end
