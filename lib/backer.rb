@@ -11,8 +11,10 @@ class Backer #has many recipricol relationship! w. has many you know you need to
     #need to them set up opposite relationship so that PROJECT knows about the BACKER
     #Project is an object of the Project Class. Which means it has access to ANY method within its class. So it has access to its instance method
     #add_backer(backer) so we can use that method on this argument (project) bc (project) is an instance of the Project Class:
-    project.add_backer(self) #need to change this argument to self bc backer (argument from other class is not defined here in this class/method bc its just a local var)
+    #project.add_backer(self) #need to change this argument to self bc backer (argument from other class is not defined here in this class/method bc its just a local var)
     #when you change to self it refers to the instance!
+    #but this will create a long long loop! (project.add_backer(self)) so need to find different way...
+    project.backers << self
   end
 end
 
