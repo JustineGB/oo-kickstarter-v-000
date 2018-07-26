@@ -1,6 +1,6 @@
 class Project
-  attr_accessor :title
-  attr_reader :backers #need to be able to set/get the title and set/get the backers (which is stored in an array) in order for this class to keep track of its backers?
+  attr_accessor :title #need to be able to set & get the title
+  attr_reader :backers #just need to get (read) the backers (whihc are stored in an array)
 
 
   def initialize(title)
