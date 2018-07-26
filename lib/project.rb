@@ -8,6 +8,6 @@ class Project   #Projects can HAVE MANY BACKERS. Backers can HAVE MANY Projects.
 
   def add_backer(backer) #call self w/in this method? self to instance. then call Backer Class.back_projects method?
     @backers << backer #stores this specific backer into the backer's array (owned by the Project Class)
-    backer.back_project(backer)
+    #backer.back_project(backer)
   end
 end
