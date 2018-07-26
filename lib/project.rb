@@ -1,5 +1,6 @@
 class Project   #Projects can HAVE MANY BACKERS. Backers can HAVE MANY Projects. So, it is a "HAS MANY" to "HAS MANY" relationship.
   attr_accessor :title, :backers  #need to be able to set & get the title
+  attr_writer :add_backer
 
   def initialize(title)
     @title = title
@@ -11,6 +12,6 @@ class Project   #Projects can HAVE MANY BACKERS. Backers can HAVE MANY Projects.
     #how do we create the opposite relationship?
     #Need to add this instance of PROJECT! into the Backer's backed_projects array
     #(i.e. so he/she knows all of the project he./she is part of)
-  #  backer.backed_projects(self)
+   backer.backed_projects(self)
   end
 end
