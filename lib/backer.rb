@@ -14,3 +14,5 @@ class Backer #has many recipricol relationship! w. has many you know you need to
     project.add_backer(project)
   end
 end
+
+#side note: if this was a has many/belongs to we could use project.backer.self (in the back_project method) 
